@@ -45,7 +45,7 @@
 
 - (IBAction)directions:(id)sender {
     
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://maps.apple.com/maps?daddr=43.320886,21.9290811"] options:@{} completionHandler:nil];
     
 }
 
@@ -57,6 +57,25 @@
     [locationManager startUpdatingLocation];
     
     self.mapView.showsUserLocation = YES;
+    
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    
+    span.latitudeDelta = 0.005;
+    span.longitudeDelta = 0.005;
+    
+    CLLocationCoordinate2D location;
+    location.latitude = userLocation.coordinate.latitude;
+    location.longitude = userLocation.coordinate.longitude;
+    
+    region.span = span;
+    region.center = location;
+    
+    [self.mapView setRegion:region animated:YES];
     
 }
 
