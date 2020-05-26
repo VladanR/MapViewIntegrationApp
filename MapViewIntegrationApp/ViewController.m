@@ -20,4 +20,18 @@
 }
 
 
+- (IBAction)directions:(id)sender {
+}
+
+- (IBAction)locate:(id)sender {
+}
+
+- (IBAction)hybrid:(id)sender {
+}
+
+- (IBAction)satelite:(id)sender {
+}
+
+- (IBAction)standard:(id)sender {
+}
 @end

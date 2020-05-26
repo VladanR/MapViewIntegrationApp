@@ -17,6 +17,7 @@
 		BC71FD1D247D860100AC8B9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71FD1C247D860100AC8B9B /* main.m */; };
 		BC71FD27247D860100AC8B9B /* MapViewIntegrationAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71FD26247D860100AC8B9B /* MapViewIntegrationAppTests.m */; };
 		BC71FD32247D860100AC8B9B /* MapViewIntegrationAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71FD31247D860100AC8B9B /* MapViewIntegrationAppUITests.m */; };
+		BC71FD41247D8A9400AC8B9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71FD40247D8A9400AC8B9B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BC71FD2D247D860100AC8B9B /* MapViewIntegrationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewIntegrationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC71FD31247D860100AC8B9B /* MapViewIntegrationAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewIntegrationAppUITests.m; sourceTree = "<group>"; };
 		BC71FD33247D860100AC8B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC71FD40247D8A9400AC8B9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC71FD41247D8A9400AC8B9B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,7 @@
 				BC71FD25247D860100AC8B9B /* MapViewIntegrationAppTests */,
 				BC71FD30247D860100AC8B9B /* MapViewIntegrationAppUITests */,
 				BC71FD05247D860000AC8B9B /* Products */,
+				BC71FD3F247D8A9400AC8B9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +142,14 @@
 				BC71FD33247D860100AC8B9B /* Info.plist */,
 			);
 			path = MapViewIntegrationAppUITests;
+			sourceTree = "<group>";
+		};
+		BC71FD3F247D8A9400AC8B9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC71FD40247D8A9400AC8B9B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
