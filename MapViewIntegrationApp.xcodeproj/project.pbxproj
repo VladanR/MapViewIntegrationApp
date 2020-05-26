@@ -18,6 +18,7 @@
 		BC71FD27247D860100AC8B9B /* MapViewIntegrationAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71FD26247D860100AC8B9B /* MapViewIntegrationAppTests.m */; };
 		BC71FD32247D860100AC8B9B /* MapViewIntegrationAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71FD31247D860100AC8B9B /* MapViewIntegrationAppUITests.m */; };
 		BC71FD41247D8A9400AC8B9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71FD40247D8A9400AC8B9B /* MapKit.framework */; };
+		BC71FD44247D8FDF00AC8B9B /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71FD43247D8FDF00AC8B9B /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		BC71FD31247D860100AC8B9B /* MapViewIntegrationAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewIntegrationAppUITests.m; sourceTree = "<group>"; };
 		BC71FD33247D860100AC8B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC71FD40247D8A9400AC8B9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BC71FD42247D8FDF00AC8B9B /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		BC71FD43247D8FDF00AC8B9B /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				BC71FD08247D860000AC8B9B /* AppDelegate.m */,
 				BC71FD0A247D860000AC8B9B /* SceneDelegate.h */,
 				BC71FD0B247D860000AC8B9B /* SceneDelegate.m */,
+				BC71FD42247D8FDF00AC8B9B /* MapPin.h */,
+				BC71FD43247D8FDF00AC8B9B /* MapPin.m */,
 				BC71FD0D247D860000AC8B9B /* ViewController.h */,
 				BC71FD0E247D860000AC8B9B /* ViewController.m */,
 				BC71FD10247D860000AC8B9B /* Main.storyboard */,
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC71FD44247D8FDF00AC8B9B /* MapPin.m in Sources */,
 				BC71FD1D247D860100AC8B9B /* main.m in Sources */,
 				BC71FD15247D860000AC8B9B /* MapViewIntegrationApp.xcdatamodeld in Sources */,
 				BC71FD0F247D860000AC8B9B /* ViewController.m in Sources */,

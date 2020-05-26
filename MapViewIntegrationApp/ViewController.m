@@ -16,22 +16,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    
+    span.latitudeDelta = 0.005;
+    span.longitudeDelta = 0.005;
+    
+    CLLocationCoordinate2D location;
+    location.latitude = 43.320886;
+    location.longitude = 21.9290811;
+    
+    region.span = span;
+    region.center = location;
+    
+    [self.mapView setRegion:region animated:YES];
+    
+    MapPin *annotation = [[MapPin alloc] init];
+    annotation.coordinate = location;
+    [self.mapView addAnnotation:annotation];
 }
 
 
 - (IBAction)directions:(id)sender {
+    
+    
+    
 }
 
 - (IBAction)locate:(id)sender {
+    
+    
+    
 }
 
 - (IBAction)hybrid:(id)sender {
+
     self.mapView.mapType = MKMapTypeHybrid;
+
 }
 
 - (IBAction)satelite:(id)sender {
+    
     self.mapView.mapType = MKMapTypeSatellite;
+
 }
 
 - (IBAction)standard:(id)sender {
