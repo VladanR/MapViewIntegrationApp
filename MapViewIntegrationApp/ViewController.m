@@ -27,11 +27,18 @@
 }
 
 - (IBAction)hybrid:(id)sender {
+    self.mapView.mapType = MKMapTypeHybrid;
 }
 
 - (IBAction)satelite:(id)sender {
+    self.mapView.mapType = MKMapTypeSatellite;
 }
 
 - (IBAction)standard:(id)sender {
+
+    self.mapView.mapType = MKMapTypeStandard;
+    
 }
+
+
 @end
