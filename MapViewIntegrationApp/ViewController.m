@@ -35,6 +35,11 @@
     MapPin *annotation = [[MapPin alloc] init];
     annotation.coordinate = location;
     [self.mapView addAnnotation:annotation];
+    
+    locationManager.delegate = self;
+    self.mapView.delegate = self;
+    locationManager = [[CLLocationManager alloc] init];
+    
 }
 
 
@@ -46,7 +51,12 @@
 
 - (IBAction)locate:(id)sender {
     
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager requestAlwaysAuthorization];
     
+    [locationManager startUpdatingLocation];
+    
+    self.mapView.showsUserLocation = YES;
     
 }
 
